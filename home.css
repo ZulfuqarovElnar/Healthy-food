@@ -314,6 +314,13 @@ main {
     flex-direction: column;
     justify-content: space-between;
     background: #252525;
+    position: relative;
+}
+.dishes-card .img-icon{
+    position: absolute;
+    top: 24px;
+    right:24px;
+    cursor: pointer;
 }
 .dishes-title h1{
     padding:  0 30px;
@@ -338,7 +345,7 @@ main {
 }
 
 .dishes-star button{
-    background-color: #252525;
+    background-color: #303030;
     border-radius: 30px;
     padding: 5px 20px;
     border: 0;
