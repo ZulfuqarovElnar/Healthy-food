@@ -275,15 +275,15 @@ main {
     position: relative;
     top: 90px;
 }
-.dishes-head h1, .chef-title h1{
+.dishes-head h1, .chef-title h1, .recipe-title h1{
     font-size: 85px;
     position: relative;
     top: 90px;
-    color: #303030;
+    color: #303030; 
     font-weight: 900;
     letter-spacing: 0.2rem;
 }
-.dishes-head h2, .chef-title h2{
+.dishes-head h2, .chef-title h2, .recipe-title h2{
     color: #D9D9D9;
     font-size: 36px;
     position: relative;
@@ -291,7 +291,7 @@ main {
     font-weight: 400;
     letter-spacing: 0.2rem;
 }
-.dishes-head hr, .chef-title hr{
+.dishes-head hr, .chef-title hr, .recipe-title hr{
     width: 60px;
     height: 2px;
     border: #34C759;
@@ -402,4 +402,120 @@ main {
     padding-top: 24px;
     display: flex;
     gap: 30px;
+}
+
+            /* *Recipe* */
+
+.recipe{
+    max-width: 1110px;
+    width: 100%;
+    height: 690px;
+    margin: 0 auto;
+}
+.recipe-title{
+    text-align: center;
+}
+.recipe-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(540px, 1fr));
+    gap: 30px;
+    padding-top: 90px;
+}
+.recipe-breakfast{
+    max-width: 540px;
+    background-image: url(images/placeholder.jpg);
+    background-repeat: no-repeat; ;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.recipe-breakfast .card{
+    position: relative;
+    text-align: center;
+}
+.recipe-breakfast .img-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 3;
+}   
+.recipe-breakfast .card h4{
+    width: 90px;
+    margin: 0 auto;
+    font-size: 10px;
+    padding: 10px 15px;
+    margin-bottom: 65px;
+    background-color: rgba(0, 0, 0,0.4);
+    color: #fff;
+}
+
+.recipe-breakfast .card p {
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.recipe-breakfast .card .text{
+    font-size: 24px;
+    padding-bottom: 45px;
+}
+.recipe-icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.recipe-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.recipe-lunch{
+    height: 150px;
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 30px 20px 25px 30px;
+    color: #fff;
+}
+.recipe-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.recipe-body div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.recipe-dinner{
+    height: 150px;
+    background-image: url(images/image.jpg);
+    border-radius: 8px;
+    padding: 30px 20px 25px 30px;
+    color: #fff;
+}
+.recipe-sweet{
+    height: 150px;
+    background-color:#34C759;
+    border-radius: 8px;
+    padding: 30px 20px 25px 30px;
+    color: #252525;
+}
+.recipe-body h4{
+    background-color: #000;
+    font-size: 10px;
+    padding: 7px 20px;
+}
+.recipe-body h3{
+    background-color: #000;
+    font-size: 10px;
+    padding: 7px 20px;
+    color: #fff;
 }
