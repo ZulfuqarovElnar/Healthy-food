@@ -530,6 +530,7 @@ main {
     width: 100%;
     height: 750px;
     margin: 0 auto;
+    overflow: auto;
 }
 .social-title {
     margin-top: 120px;
@@ -600,4 +601,39 @@ main {
     left: 158px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+        /* * FOOTER * */
+
+footer{
+    max-width: 1440px;
+    width: 100%;
+    height: 275px;
+    background-color: #252525;
+    text-align: center;
+}
+.footer-contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-card img{
+    padding-top: 32px;
+}
+.footer-card h3{
+    padding-top: 13px;
+    color: #fff;
+}
+footer p{
+    padding-bottom: 30px;
+    color: rgb(255, 255, 255,0.5);
+}
+
+footer hr{
+    height: 2px;
+    background-color: #303030;
+    border: #303030;
+}
+.footer-img{
+    padding-top: 40px;
+    padding-bottom: 13px;
 }
